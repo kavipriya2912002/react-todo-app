@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import TopBar from './Components/TopBar'
+import Topbar from './Components/Topbar'
 
 
 
@@ -26,10 +26,10 @@ function App() {
     status:false
     
   }
-])
+]);
 let [completed,setCompleted]=useState("All")
   return <>
-  <TopBar todo={todo} setTodo={setTodo} completed={completed} setCompleted={setCompleted}/>
+  <Topbar todo={todo} setTodo={setTodo} completed={completed} setCompleted={setCompleted}/>
   </>
 }
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Cards from './Cards';
 import Edit from './Edit';
 
-function TopBar({ todo, setTodo, completed, setCompleted }) {
+function TopBar( todo, setTodo, completed, setCompleted ) {
   let [title, setTitle] = useState('');
   let [description, setDescription] = useState('');
   let [selectedTodo, setSelectedTodo] = useState(null);

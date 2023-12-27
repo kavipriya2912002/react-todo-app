@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Edit({title,setTitle,description,setDescription,onClick }) {
+function Edit(title,setTitle,description,setDescription,onClick ) {
   return (
     <div style={{ padding: 20 }}>
       <h2>Edit Todo</h2>
