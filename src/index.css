@@ -1,142 +1,32 @@
-body{
-  background-color: wheat;
-  color:black;
-  overflow: hidden
+.HeaderColor{
+  color: green;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+  font-weight: bolder;
 }
-h1{
-  text-align: center
+input{
+  border:2px solid green;
+  border-radius: 10px;
+  height:50px;
+  width: 200px;
 }
-
-.todo-wrapper{
-  background-color: white;
-  padding: 2%;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3%;
-  max-height: 80vh;
-  overflow-y: auto;
-  box-shadow: 0px 5px 7px black;
+button{
+  background-color: green;
+  color: white;
+  padding: 10px;
+  width: 20vh;
+  border-radius: 10px;
+  font-weight: bolder;
 }
-
-.todo-input{
+.card{
+  background-color: rgb(105, 255, 105);
+  padding: 10px;
+  border: 2px solid black;
+  gap: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid gray;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
+  row-gap: 10px;
 }
-.todo-input-item{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 25px;
-}
-.todo-input-item label{
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.todo-input-item input{
-  padding: 10px;
-  width: 250px;
-}
-
-.todo-input-item input:focus{
-  outline: 2px solid rgb(131, 216, 131);
-}
-
-.primaryBtn{
-  background-color: aqua;
-  color: black;
-  border: none;
-  border-radius: 4px;
-  padding: 10px;
-  width: 100px;
-  margin-top: 30px;
-  cursor: pointer;
-
-}
-
-.primaryBtn:hover{
-  background-color: rgb(5, 101, 101);
-}
-
-.secondaryBtn{
-  background-color: grey;
-  color: black;
-  border: none;
-  border-radius: 4px;
-  padding: 10px;
-  width: fit-content;
-  margin-top: 30px;
-  cursor: pointer;
-
-}
-.secondary-Btn{
-  background-color: grey;
-  color: black;
-  border: none;
-  border-radius: 4px;
-  padding: 10px;
-  width: fit-content;
-  margin-top: 30px;
-  cursor: pointer;
-}
-
-.active{
-  background-color: aqua;
-}
-
-/* .todo-list{
-  
-} */
-.todo-list{
-  background-color: rgb(205, 203, 203);
-display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 35px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  box-shadow: 0px 3px 5px grey;
-}
-
-.btn-area{
-  margin-bottom: 15px;
-}
-
-.todo-list-item{
- display:flex;
- flex-direction:column;
-
-
-
-}
-.todo-list-item h3{
-  font-size: 25px;
-  color: black;
-  font-weight: bold;
-  margin: 0;
-}
-
-.todo-list-item p{
-  font-size: 14px;
-  color: black;
-  margin-top: 8px;
-}
-.edit{
-  font-size: 25px;
-  cursor: pointer;
-  color: black;
-  background-color: rgb(88, 192, 88);
-}
-.delete{
-  font-size: 25px;
-  margin-left: 10px;
-  color: black;
-  background-color: rgb(88, 192, 88);
-}
-.delete:hover{
-  background-color: rgb(190, 52, 52);
+.content{
+  font-size: 20px;
+  text-decoration: underline;
 }
