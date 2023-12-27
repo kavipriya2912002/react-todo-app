@@ -14,7 +14,7 @@ function TopBar({ todo, setTodo, completed, setCompleted }) {
 
   const handleClick = () => {
     if (selectedTodo) {
-      // Editing existing todo
+      
       setTodo((prevTodos) =>
         prevTodos.map((t) =>
           t.id === selectedTodo.id ? { ...t, title, description } : t
@@ -22,7 +22,7 @@ function TopBar({ todo, setTodo, completed, setCompleted }) {
       );
       setSelectedTodo(null);
     } else {
-      // Adding new todo
+   
       let id = todo.length ? todo[todo.length - 1].id + 1 : 1;
       let newArray = [...todo];
       newArray.push({
@@ -33,7 +33,7 @@ function TopBar({ todo, setTodo, completed, setCompleted }) {
       setTodo(newArray);
     }
 
-    // Reset input fields
+ 
     setTitle('');
     setDescription('');
   };

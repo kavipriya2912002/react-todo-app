@@ -1,7 +1,7 @@
 import React from 'react';
 import Edit from './Edit';
 
-function Cards({ todo, setTodo, completed, setCompleted, onEdit }) {
+function Cards({ todo, setTodo, completed, setCompleted,onEdit }) {
   let Delete = () => {
     setTodo((prevTodo) =>
       prevTodo.filter((item) => item.id !== todo.id)
